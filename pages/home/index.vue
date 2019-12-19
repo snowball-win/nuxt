@@ -99,3 +99,9 @@ export default {
   padding-top: 15px;
 }
 </style>
+// git 项目地址
+// https://github.com/snowball-win
+
+// 本页面要点
+// Object.defineProperty
+// $store.commit('increment')
