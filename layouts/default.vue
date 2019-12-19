@@ -16,9 +16,12 @@
         <el-menu-item index="2-3">选项3</el-menu-item>
       </el-submenu>
       <el-menu-item index="3">JavaScript</el-menu-item>
-      <el-menu-item index="4">Node</el-menu-item>
-      <el-menu-item index="4">MySql</el-menu-item>
-      <el-menu-item index="4">Git</el-menu-item>
+      <el-menu-item index="4">Vue</el-menu-item>
+      <el-menu-item index="5">Nuxt</el-menu-item>
+      <el-menu-item index="6">Node</el-menu-item>
+      <el-menu-item index="7">MySql</el-menu-item>
+      <el-menu-item index="8">Git</el-menu-item>
+      <el-menu-item index="9">interview</el-menu-item>
     </el-menu>
     <nuxt />
   </div>

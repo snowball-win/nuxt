@@ -7,6 +7,7 @@
         <input type="text" class="test">
         <p @click="changeName">change{{name}}</p>
         <p>reverse{{reversedNames}}</p>
+        <button @click="$store.commit('increment')">{{ $store.state.counter }}</button>
       </div>
     </div>
   </div>
@@ -14,7 +15,6 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
-
 export default {
   components: {
     Logo
@@ -62,6 +62,7 @@ export default {
   },
   mounted(){
     this.testDefineProperty()
+    console.log('st',this)
   }
 }
 </script>
