@@ -5,29 +5,8 @@
       <div>
         <el-button>123</el-button>
         <input type="text" class="test">
-        <p @click="changeName">{{name}}</p>
-      </div>
-      <h1 class="title">
-        nuxtssr
-      </h1>
-      <h2 class="subtitle">
-        nuxtssr
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+        <p @click="changeName">change{{name}}</p>
+        <p>reverse{{reversedNames}}</p>
       </div>
     </div>
   </div>
@@ -43,6 +22,11 @@ export default {
   data(){
     return {
       name: 'yiyi'
+    }
+  },
+  computed:{
+    reversedNames(){
+      return this.name.split('').reverse().join('')
     }
   },
   methods:{
