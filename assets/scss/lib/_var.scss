@@ -1,0 +1,86 @@
+$bgbody:#000;
+$bgcol:#fff;
+$fontcol:#333;
+$fontfamily:'Helvetica',
+'STHeiti',
+'Arial',
+'Microsoft YaHei';
+$webWidth: 1000px;
+$baseFontsize: 14px !default;
+$vm_fontsize: 96; // iPhone 6尺寸的根元素大小基准值
+$color-07: rgba(97, 97, 97, 0.7);
+$color-01: rgba(97, 97, 97, 0.1);
+$color-04: rgba(97, 97, 97, 0.4);
+$colorNormal:rgb(97, 97, 97);
+
+@function rem($px) {
+  @return ($px / $vm_fontsize) * 1rem;
+}
+
+@function pc($px) {
+  @return ($px / 0.375 / 2) *1px;
+}
+
+@function em($px) {
+  @return (($px / 0.75) / 100) * 1em;
+}
+
+@function emMin($px) {
+  @return (($px / 0.54) / 100) * 1em;
+}
+
+// 根元素大小使用 vw 单位
+$vm_design: 750;
+
+@mixin clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    content: " ";
+    clear: both;
+  }
+}
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  transform: $transform;
+}
+
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  transition: $transition;
+}
+
+@mixin animation($animation...) {
+  -webkit-animation: $animation;
+  -moz-animation: $animation;
+  animation: $animation;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin mediaQuerypc {
+  @media only (max-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin mediaQuerym {
+  @media only (max-width: 768px) {
+    @content;
+  }
+}

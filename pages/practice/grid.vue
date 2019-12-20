@@ -3,24 +3,24 @@
     <div class="first">
       <div>一 gird</div>
       <div class="wrapper">
-          <div class="item">1</div>
-          <div class="item">2</div>
-          <div class="item">3</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
       </div>
     </div>
     <div class="second">
       <div>二 inline-gird</div>
       <span>foo</span>
       <div class="wrapper">
-          <div class="item">1</div>
-          <div class="item">2</div>
-          <div class="item">3</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
       </div>
       <span>bar</span>
     </div>
     <div class="third">
       <div>三 repeat</div>
-       <div class="wrapper">
+      <div class="wrapper">
         <div class="item item-1">1</div>
         <div class="item item-2">2</div>
         <div class="item item-3">3</div>
@@ -37,50 +37,51 @@
       <div class="wrapper">
         <div class="item">1</div>
         <div class="item">2</div>
-        <div class="item">3</div> 
+        <div class="item">3</div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  export default {
-    
-  }
+export default {
+
+}
 </script>
 
 <style scoped lang="scss">
-.first .wrapper,.second .wrapper{
-  width:450px;
+.first .wrapper,
+.second .wrapper {
+  width: 450px;
   background: #f3f3f3;
-  text-align:center;
+  text-align: center;
   display: grid;
-  grid-template-columns: 150px 150px 150px;//用来指定行的宽度
-  grid-template-rows: 150px 150px 150px;//用来指定行的宽度
-  >.item{
+  grid-template-columns: 150px 150px 150px; //用来指定行的宽度
+  grid-template-rows: 150px 150px 150px; //用来指定行的宽度
+  > .item {
     border: 1px solid red;
-    &:first-of-type{
-      background:#ef342a;
+    &:first-of-type {
+      background: #ef342a;
     }
-    &:nth-of-type(2){
-      background:#00a0a0;
+    &:nth-of-type(2) {
+      background: #00a0a0;
     }
-    &:nth-of-type(3){
-      background:#a0a0ff;
+    &:nth-of-type(3) {
+      background: #a0a0ff;
     }
   }
 }
-.second{
-  .wrapper{
+.second {
+  .wrapper {
     display: inline-grid;
   }
 }
-.third{
-  .wrapper{
+.third {
+  .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 100px 20px 80px);
     grid-template-rows: repeat(3, 100px);
-    .item{
+    .item {
       font-size: 4em;
       text-align: center;
       border: 1px solid #e5e4e9;
@@ -114,26 +115,26 @@
     }
   }
 }
-.fourth{
-  .wrapper{
-      width:450px;
-      background: #f3f3f3;
-      text-align:center;
-      display:grid;
-      grid-template-columns: 1fr 2fr 1fr;
-      grid-template-rows: 150px 150px 150px;
-      >.item{
-        border: 1px solid red;
-        &:first-of-type{
-          background:#ef342a;
-        }
-        &:nth-of-type(2){
-          background:#00a0a0;
-        }
-        &:nth-of-type(3){
-          background:#a0a0ff;
-        }
+.fourth {
+  .wrapper {
+    width: 450px;
+    background: #f3f3f3;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 150px 150px 150px;
+    > .item {
+      border: 1px solid red;
+      &:first-of-type {
+        background: #ef342a;
       }
+      &:nth-of-type(2) {
+        background: #00a0a0;
+      }
+      &:nth-of-type(3) {
+        background: #a0a0ff;
+      }
+    }
   }
 }
 </style>
