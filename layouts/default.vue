@@ -50,6 +50,7 @@
           >segmentFault</a></el-menu-item>
       </el-submenu>
       <el-menu-item index="12">环境</el-menu-item>
+      <el-menu-item index="13">生活</el-menu-item>
     </el-menu>
     <nuxt />
   </div>
