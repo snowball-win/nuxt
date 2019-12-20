@@ -7,7 +7,8 @@
       @select="handleSelect"
       background-color="#545c64"
       text-color="#fff"
-      active-text-color="#ffd04b">
+      active-text-color="#ffd04b"
+    >
       <el-menu-item index="1">HTML</el-menu-item>
       <el-submenu index="2">
         <template slot="title">CSS</template>
@@ -21,14 +22,34 @@
       <el-menu-item index="6">Node</el-menu-item>
       <el-menu-item index="7">MySql</el-menu-item>
       <el-menu-item index="8">Git</el-menu-item>
-      <el-menu-item index="9">interview</el-menu-item>
+      <el-menu-item index="9"><a
+          href="http://blog.poetries.top/FE-Interview-Questions/"
+          target="_blank"
+        >interview</a></el-menu-item>
       <el-submenu index="10">
         <template slot="title">项目</template>
         <!-- <el-menu-item index="10-1">党媒头条</el-menu-item>
         <el-menu-item index="10-2">随心游</el-menu-item> -->
-        <el-menu-item index="10-1"><a href="https://www.haolvshi.com.cn/" target="_blank">好律师</a></el-menu-item>
-        <el-menu-item index="10-2"><a href="https://www.sitechdev.com/" target="_blank">新特汽车</a></el-menu-item>
+        <el-menu-item index="10-1">
+          <a
+            href="https://www.haolvshi.com.cn/"
+            target="_blank"
+          >好律师</a></el-menu-item>
+        <el-menu-item index="10-2">
+          <a
+            href="https://www.sitechdev.com/"
+            target="_blank"
+          >新特汽车</a></el-menu-item>
       </el-submenu>
+      <el-submenu index="11">
+        <template slot="title">博客/网站</template>
+        <el-menu-item index="11-1">
+          <a
+            href="https://segmentfault.com/"
+            target="_blank"
+          >segmentFault</a></el-menu-item>
+      </el-submenu>
+      <el-menu-item index="12">环境</el-menu-item>
     </el-menu>
     <nuxt />
   </div>
@@ -36,24 +57,24 @@
 <script>
 export default {
   data () {
-    return{
+    return {
       activeIndex2: '1'
     }
   },
-  methods:{
-    handleSelect(key, keyPath) {
+  methods: {
+    handleSelect (key, keyPath) {
       console.log(key, keyPath)
     }
   },
-  mounted(){
+  mounted () {
 
   }
 }
 </script>
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
