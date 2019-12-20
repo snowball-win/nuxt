@@ -22,6 +22,13 @@
       <el-menu-item index="7">MySql</el-menu-item>
       <el-menu-item index="8">Git</el-menu-item>
       <el-menu-item index="9">interview</el-menu-item>
+      <el-submenu index="10">
+        <template slot="title">项目</template>
+        <!-- <el-menu-item index="10-1">党媒头条</el-menu-item>
+        <el-menu-item index="10-2">随心游</el-menu-item> -->
+        <el-menu-item index="10-1"><a href="https://www.haolvshi.com.cn/" target="_blank">好律师</a></el-menu-item>
+        <el-menu-item index="10-2"><a href="https://www.sitechdev.com/" target="_blank">新特汽车</a></el-menu-item>
+      </el-submenu>
     </el-menu>
     <nuxt />
   </div>
