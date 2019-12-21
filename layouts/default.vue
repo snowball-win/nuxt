@@ -17,40 +17,41 @@
         <el-menu-item index="2-3">选项3</el-menu-item>
       </el-submenu>
       <el-menu-item index="3">JavaScript</el-menu-item>
-      <el-menu-item index="4">Vue</el-menu-item>
-      <el-menu-item index="5">Nuxt</el-menu-item>
-      <el-menu-item index="6">Node</el-menu-item>
-      <el-menu-item index="7">MySql</el-menu-item>
-      <el-menu-item index="8">Git</el-menu-item>
-      <el-menu-item index="9"><a
+      <el-menu-item index="4">JQuery</el-menu-item>
+      <el-menu-item index="5">Vue</el-menu-item>
+      <el-menu-item index="6">Nuxt</el-menu-item>
+      <el-menu-item index="7">Node</el-menu-item>
+      <el-menu-item index="8">MySql</el-menu-item>
+      <el-menu-item index="9">Git</el-menu-item>
+      <el-menu-item index="10"><a
           href="http://blog.poetries.top/FE-Interview-Questions/"
           target="_blank"
         >interview</a></el-menu-item>
-      <el-submenu index="10">
+      <el-submenu index="11">
         <template slot="title">项目</template>
         <!-- <el-menu-item index="10-1">党媒头条</el-menu-item>
         <el-menu-item index="10-2">随心游</el-menu-item> -->
-        <el-menu-item index="10-1">
+        <el-menu-item index="11-1">
           <a
             href="https://www.haolvshi.com.cn/"
             target="_blank"
           >好律师</a></el-menu-item>
-        <el-menu-item index="10-2">
+        <el-menu-item index="11-2">
           <a
             href="https://www.sitechdev.com/"
             target="_blank"
           >新特汽车</a></el-menu-item>
       </el-submenu>
-      <el-submenu index="11">
+      <el-submenu index="12">
         <template slot="title">博客/网站</template>
-        <el-menu-item index="11-1">
+        <el-menu-item index="12-1">
           <a
             href="https://segmentfault.com/"
             target="_blank"
           >segmentFault</a></el-menu-item>
       </el-submenu>
-      <el-menu-item index="12">环境</el-menu-item>
-      <el-menu-item index="13">生活</el-menu-item>
+      <el-menu-item index="13">开发环境</el-menu-item>
+      <el-menu-item index="14">生活</el-menu-item>
     </el-menu>
     <nuxt />
   </div>
